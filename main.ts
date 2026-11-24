@@ -4,23 +4,27 @@
 // 1-20 characters, one word, no whitespace) and writes it to
 // /output/entry.txt, then reads the file back to confirm the write landed.
 //
-// v1 — "Goldfish".
-// The joke: your Wi-Fi has the memory of a goldfish. It forgets your phone
-// every morning, drops the device it knew yesterday, and asks for the
-// password again like you have never met. True (routers forget devices,
-// "forget this network" is a daily ritual) and instantly gettable —
-// everybody knows the three-second-memory goldfish. Fresh angle: nobody in
-// the field plays the memory-loss card; the crowd is all Ghosting (26+),
-// Gaslighting (18+), Peekaboo, Liar, Catfish — the relationship-behaviour
-// cluster. A goldfish sidesteps that whole cluster.
-// Doubt that keeps it from being final: as a bare network name, "Goldfish"
-// can read as just a pet name — the forgetfulness joke needs half a beat,
-// and the judge rewards the laugh that lands at once. v2 tries a word whose
-// joke needs no beat at all.
+// v2 — "Sleepwalking".
+// The joke: your Wi-Fi is sleepwalking. The lights are on, the router is
+// blinking, the bars are full — and nobody is home. It is present but
+// completely unaware, which is exactly the "Connected, no internet" state
+// every household knows: full signal, zero actual internet, and a reboot as
+// the only way to wake it up. True to the single most maddening Wi-Fi
+// moment, and a fresh angle nobody in the field uses — the crowd is all
+// Ghosting (26+), Gaslighting (18+), Peekaboo, Liar, Catfish, Buffering.
+// The word is instantly spelled and instantly gettable: on, but nobody home.
+// Doubt that keeps it from being final: the laugh is wry rather than loud.
+// "Sleepwalking" makes the judge smile and nod; the winning word should
+// make the judge laugh out loud at the exact second Wi-Fi betrays you.
+// v3 goes for that second: the video freezing at the climax.
+//
+// v1 was "Goldfish" (Wi-Fi with a three-second memory — forgets your device
+// every morning). Rejected: as a bare network name it can read as a pet
+// name; the forgetfulness joke needs half a beat.
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
-const ENTRY = "Goldfish";
+const ENTRY = "Sleepwalking";
 
 const MAX_CHARS = 20;
 
