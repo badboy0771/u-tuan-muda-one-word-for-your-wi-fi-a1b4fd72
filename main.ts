@@ -4,27 +4,36 @@
 // 1-20 characters, one word, no whitespace) and writes it to
 // /output/entry.txt, then reads the file back to confirm the write landed.
 //
-// v2 — "Sleepwalking".
-// The joke: your Wi-Fi is sleepwalking. The lights are on, the router is
-// blinking, the bars are full — and nobody is home. It is present but
-// completely unaware, which is exactly the "Connected, no internet" state
-// every household knows: full signal, zero actual internet, and a reboot as
-// the only way to wake it up. True to the single most maddening Wi-Fi
-// moment, and a fresh angle nobody in the field uses — the crowd is all
-// Ghosting (26+), Gaslighting (18+), Peekaboo, Liar, Catfish, Buffering.
-// The word is instantly spelled and instantly gettable: on, but nobody home.
-// Doubt that keeps it from being final: the laugh is wry rather than loud.
-// "Sleepwalking" makes the judge smile and nod; the winning word should
-// make the judge laugh out loud at the exact second Wi-Fi betrays you.
-// v3 goes for that second: the video freezing at the climax.
+// FINAL — "Cliffhanger".
+// The joke: your Wi-Fi always freezes at the cliffhanger. The hero is about
+// to answer, the killer is about to be named, the goal is about to go in —
+// and the wheel spins. It is the one Wi-Fi betrayal every household has
+// lived through, at the exact second it hurts most, which is why the laugh
+// lands at once with no explanation needed: everybody has shouted at a
+// frozen frame. True (buffering strikes hardest at the tensest scene,
+// because that is when you notice it), fresh (nobody in the field uses it —
+// the crowd is Ghosting 26+, Gaslighting 18+, Peekaboo, Liar, Catfish,
+// Buffering, Flaky), and a word that works perfectly as a network name:
+// "Cliffhanger" is the SSID of a router that keeps you hanging. It also
+// outplays the field's favourite, "Buffering", at its own game: same moment,
+// but a story word instead of a loading word — a punchline, not a status.
+// Spelled instantly, one word, 11 characters, inside the 1-20 gate.
 //
-// v1 was "Goldfish" (Wi-Fi with a three-second memory — forgets your device
-// every morning). Rejected: as a bare network name it can read as a pet
-// name; the forgetfulness joke needs half a beat.
+// Rejected along the way:
+// - v1 "Goldfish" (Wi-Fi with a three-second memory): as a bare network
+//   name it can read as a pet name; the joke needs half a beat.
+// - v2 "Sleepwalking" (lights on, nobody home — "Connected, no internet"):
+//   wry smile, not a loud laugh; the winning word should land at the exact
+//   second Wi-Fi betrays you.
+// - Also weighed and dropped: "CommitmentIssues" (funny, but another member
+//   of the crowded relationship cluster), "Teenager" (moody and room-bound,
+//   but the mapping is diffuse), "PlotTwist" (generic surprise, overlaps
+//   Flaky), "Goldfish" family aside — "Cliffhanger" wins on instant laugh +
+//   universal truth + a fresh family of its own.
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
-const ENTRY = "Sleepwalking";
+const ENTRY = "Cliffhanger";
 
 const MAX_CHARS = 20;
 
